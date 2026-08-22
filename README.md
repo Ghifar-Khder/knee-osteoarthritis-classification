@@ -50,6 +50,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
   <img src="Figures/Cropping-knee-area-and-turn-into-square.png" width="400"><br>
   <em>Figure: Cropping the knee area and extending the length to get a square image.</em>
 </p>
+
 3. **Train/validation split** — 90% / 10% per class, done independently for each of the two expert-labeled sets, producing `train1/validation1` and `train2/validation2`.
 
 ### OAI dataset
@@ -60,6 +61,25 @@ Since this dataset was already clean and split, preprocessing focused on **fixin
 
 - CNN (ResNet-based) trained for 5-class KL grading on the combined, preprocessed datasets
 - Grad-CAM used for visual interpretability (highlights the joint regions driving each prediction)
+
+## Grad-CAM Examples
+
+For a **Normal** (grade 0) knee, the Grad-CAM heatmap spreads across the entire joint space between the bones, since there is no localized damage for the model to focus on. For **Moderate** and **Severe** knees, the heatmap instead concentrates on the specific damaged or suspicious area of the joint — such as narrowed joint space or osteophytes — showing that the model is basing its grading on the actual pathological region rather than the joint as a whole.
+
+<p align="center">
+  <img src="Figures/normal-gradcam.png" width="300"><br>
+  <em>Figure: Grade 0 (Normal) — Grad-CAM spread evenly across the joint space</em>
+</p>
+
+<p align="center">
+  <img src="Figures/moderate-gradcam.png" width="300"><br>
+  <em>Figure: Grade 3 (Moderate) — Grad-CAM focused on the narrowed/damaged joint area</em>
+</p>
+
+<p align="center">
+  <img src="Figures/severe-gradcam.png" width="300"><br>
+  <em>Figure: Grade 4 (Severe) — Grad-CAM concentrated on the most affected region of the joint</em>
+</p>
 
 ## Run it locally
 
@@ -75,7 +95,7 @@ streamlit run app.py
 ## App features
 
 - Upload a knee X-ray image (JPG/PNG)
-- Get the predicted KL grade (0–4) with a confidence score
+- Get the predicted KL grade (0–4)
 - View a Grad-CAM heatmap overlaid on the original X-ray
 
 ## Disclaimer
