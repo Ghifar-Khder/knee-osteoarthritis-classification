@@ -22,10 +22,14 @@ This project implements an AI-based system for automatic Knee Osteoarthritis (KO
 Two datasets from Kaggle were used, each requiring a different preprocessing pipeline:
 
 **1. Digital Knee X-ray dataset** — 1,650 images, 8-bit grayscale, labeled by two independent medical experts (two separate label sets). Grades: 0 Healthy (514), 1 Doubtful (477), 2 Minimal (232), 3 Moderate (221), 4 Severe (206). Non-uniform dimensions; some images contain **both knees in a single X-ray**.
-![Image description](Figures/image-name.png)
-*Figure: short caption here*
-![Image description](Figures/image-name.png)
-*Figure: short caption here*
+
+![Image description](Figures/one-Knee.png)
+
+*Figure: An image that contains one knee*
+
+![Image description](Figures/Two-Knees.png)
+
+*Figure: An image that contains both knees *
 
 **2. OAI (Osteoarthritis Initiative) dataset** — same grading task, but already preprocessed and pre-split (70% train / 10% val / 20% test). Main issue: significant class imbalance.
 
