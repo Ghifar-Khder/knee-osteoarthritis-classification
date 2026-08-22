@@ -47,7 +47,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 </p>
 
 <p align="center">
-  <img src="Figures/Cropping-knee-area-and-turn-into-square.png" width="900"><br>
+  <img src="Figures/Cropping-knee-area-and-turn-into-square.jpeg" width="900"><br>
   <em>Figure: Cropping the knee area and extending the length to get a square image.</em>
 </p>
 
