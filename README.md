@@ -1,5 +1,5 @@
 # Knee Osteoarthritis Grading from X-ray Images
-**Download Test-data then:** [**OPEN THE APP**](https://knee-osteoarthritis-classification-ghifar-khder.streamlit.app/)
+**Download Test-data** then: [**OPEN THE APP**](https://knee-osteoarthritis-classification-ghifar-khder.streamlit.app/)
 
 ## Overview
 
