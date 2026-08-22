@@ -43,7 +43,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 
 <p align="center">
   <img src="Figures/detecting-knee-area.png" width="900"><br>
-  <em>Figure: Thresholding based on the condition ≈60% of pixels below threshold.</em>
+  <em>Figure: Thresholding based on the condition ≈60% of pixels below threshold, with further preprocessing.</em>
 </p>
 
 <p align="center">
