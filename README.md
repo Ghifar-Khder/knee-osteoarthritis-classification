@@ -40,17 +40,17 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 1. **Splitting bilateral images into single-knee images** — Each image's width/height ratio is checked; images with `width/height > 2.5` are identified as containing both knees and split vertically down the center into two equal halves. The left half of the original image corresponds to the patient's **right** knee, and the right half to the patient's **left** knee. Images that don't meet this ratio are already single-knee and left untouched.
 
 2. **Uniforming image dimensions to 224×224** — Each image is converted to grayscale and thresholded (≈60% of pixels below threshold) to get a binary mask, cleaned with morphological closing/opening (15×15 structuring element). The knee region's left/right boundaries are located by scanning the column-wise pixel-sum profile, the image is cropped to that region, padded (border replication) into a square, and resized to 224×224 — preserving the joint's structural ratio instead of a plain stretch/rescale.
-3. 
+
 <p align="center">
   <img src="Figures/detecting-knee-area.png" width="400"><br>
   <em>Figure: Thresholding based on the condition ≈60% of pixels below threshold.</em>
 </p>
 
 <p align="center">
-  <img src="Figures/Cropping-knee-area-turn-into-square.png" width="400"><br>
+  <img src="Figures/CCropping-knee-area&turn-into-square.png" width="400"><br>
   <em>Figure: Cropping the knee area and extending the length to get a square image.</em>
 </p>
-4. **Train/validation split** — 90% / 10% per class, done independently for each of the two expert-labeled sets, producing `train1/validation1` and `train2/validation2`.
+3. **Train/validation split** — 90% / 10% per class, done independently for each of the two expert-labeled sets, producing `train1/validation1` and `train2/validation2`.
 
 ### OAI dataset
 
