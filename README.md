@@ -67,17 +67,17 @@ Since this dataset was already clean and split, preprocessing focused on **fixin
 For a **Normal** (grade 0) knee, the Grad-CAM heatmap spreads across the entire joint space between the bones, since there is no localized damage for the model to focus on. For **Moderate** and **Severe** knees, the heatmap instead concentrates on the specific damaged or suspicious area of the joint — such as narrowed joint space or osteophytes — showing that the model is basing its grading on the actual pathological region rather than the joint as a whole.
 
 <p align="center">
-  <img src="Figures/normal.jpeg" width="300"><br>
+  <img src="Figures/normal.jpeg" width="900"><br>
   <em>Figure: Grade 0 (Normal) — Grad-CAM spread evenly across the joint space</em>
 </p>
 
 <p align="center">
-  <img src="Figures/moderate.jpeg" width="300"><br>
+  <img src="Figures/moderate.jpeg" width="900"><br>
   <em>Figure: Grade 3 (Moderate) — Grad-CAM focused on the narrowed/damaged joint area</em>
 </p>
 
 <p align="center">
-  <img src="Figures/severe.jpeg" width="300"><br>
+  <img src="Figures/severe.jpeg" width="900"><br>
   <em>Figure: Grade 4 (Severe) — Grad-CAM concentrated on the most affected region of the joint</em>
 </p>
 
