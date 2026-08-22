@@ -42,7 +42,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 2. **Uniforming image dimensions to 224×224** — Each image is converted to grayscale and thresholded (≈60% of pixels below threshold) to get a binary mask, cleaned with morphological closing/opening (15×15 structuring element). The knee region's left/right boundaries are located by scanning the column-wise pixel-sum profile, the image is cropped to that region, padded (border replication) into a square, and resized to 224×224 — preserving the joint's structural ratio instead of a plain stretch/rescale.
 
 <p align="center">
-  <img src="Figures/detecting-knee-area.png" width="400"><br>
+  <img src="Figures/detecting-knee-area.png" width="900"><br>
   <em>Figure: Thresholding based on the condition ≈60% of pixels below threshold.</em>
 </p>
 
