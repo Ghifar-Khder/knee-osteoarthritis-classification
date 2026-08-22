@@ -31,6 +31,16 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 
 *Figure: An image that contains both knees*
 
+**1. Digital Knee X-ray dataset** — 1,650 images, 8-bit grayscale, labeled by two independent medical experts (two separate label sets). Grades: 0 Healthy (514), 1 Doubtful (477), 2 Minimal (232), 3 Moderate (221), 4 Severe (206). Non-uniform dimensions; some images contain **both knees in a single X-ray**.
+
+<p align="center">
+  <img src="Figures/one-Knee.png" width="300">
+  <img src="Figures/Two-Knees.png" width="300">
+  <br>
+  <em>Figure: An image that contains one knee vs. an image that contains both knees</em>
+</p>
+
+
 **2. OAI (Osteoarthritis Initiative) dataset** — same grading task, but already preprocessed and pre-split (70% train / 10% val / 20% test). Main issue: significant class imbalance.
 
 ## Preprocessing
