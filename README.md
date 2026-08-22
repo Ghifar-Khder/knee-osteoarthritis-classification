@@ -27,7 +27,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
   <img src="Figures/one-Knee.png" width="400">
   <img src="Figures/Two-Knees.png" width="400">
   <br>
-  <em>Figure: An image that contains one knee vs. an image that contains both knees.</em>
+  <em>Figure (1): An image that contains one knee vs. an image that contains both knees.</em>
 </p>
 
 
@@ -43,12 +43,12 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 
 <p align="center">
   <img src="Figures/detecting-knee-area.png" width="900"><br>
-  <em>Figure: Thresholding based on the condition ≈60% of pixels below threshold, with further preprocessing.</em>
+  <em>Figure (2): Thresholding based on the condition ≈60% of pixels below threshold, with further preprocessing.</em>
 </p>
 
 <p align="center">
   <img src="Figures/Cropping-knee-area-and-turn-into-square.jpeg" width="900"><br>
-  <em>Figure: Cropping the knee area and extending the length to get a square image.</em>
+  <em>Figure (3): Cropping the knee area and extending the length to get a square image.</em>
 </p>
 
 3. **Train/validation split** — 90% / 10% per class, done independently for each of the two expert-labeled sets, producing `train1/validation1` and `train2/validation2`.
@@ -68,17 +68,17 @@ For a **Normal** (grade 0) knee, the Grad-CAM heatmap spreads across the entire 
 
 <p align="center">
   <img src="Figures/normal.jpeg" width="900"><br>
-  <em>Figure: Grade 0 (Normal) — Grad-CAM spread evenly across the joint space</em>
+  <em>Figure (4): Grade 0 (Normal) — Grad-CAM spread evenly across the joint space</em>
 </p>
 
 <p align="center">
   <img src="Figures/moderate.jpeg" width="900"><br>
-  <em>Figure: Grade 3 (Moderate) — Grad-CAM focused on the narrowed/damaged joint area</em>
+  <em>Figure (5): Grade 3 (Moderate) — Grad-CAM focused on the narrowed/damaged joint area</em>
 </p>
 
 <p align="center">
   <img src="Figures/severe.jpeg" width="900"><br>
-  <em>Figure: Grade 4 (Severe) — Grad-CAM concentrated on the most affected region of the joint</em>
+  <em>Figure (6): Grade 4 (Severe) — Grad-CAM concentrated on the most affected region of the joint</em>
 </p>
 
 ## Run it locally
