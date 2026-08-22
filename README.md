@@ -23,16 +23,6 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 
 **1. Digital Knee X-ray dataset** — 1,650 images, 8-bit grayscale, labeled by two independent medical experts (two separate label sets). Grades: 0 Healthy (514), 1 Doubtful (477), 2 Minimal (232), 3 Moderate (221), 4 Severe (206). Non-uniform dimensions; some images contain **both knees in a single X-ray**.
 
-![Image description](Figures/one-Knee.png)
-
-*Figure: An image that contains one knee*
-
-![Image description](Figures/Two-Knees.png)
-
-*Figure: An image that contains both knees*
-
-**1. Digital Knee X-ray dataset** — 1,650 images, 8-bit grayscale, labeled by two independent medical experts (two separate label sets). Grades: 0 Healthy (514), 1 Doubtful (477), 2 Minimal (232), 3 Moderate (221), 4 Severe (206). Non-uniform dimensions; some images contain **both knees in a single X-ray**.
-
 <p align="center">
   <img src="Figures/one-Knee.png" width="300">
   <img src="Figures/Two-Knees.png" width="300">
