@@ -47,7 +47,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 </p>
 
 <p align="center">
-  <img src="Figures/Cropping-knee-area-and-turn-into-square.png.png" width="400"><br>
+  <img src="Figures/Cropping-knee-area-and-turn-into-square.png" width="400"><br>
   <em>Figure: Cropping the knee area and extending the length to get a square image.</em>
 </p>
 3. **Train/validation split** — 90% / 10% per class, done independently for each of the two expert-labeled sets, producing `train1/validation1` and `train2/validation2`.
