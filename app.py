@@ -52,11 +52,6 @@ st.markdown("""
     letter-spacing: 1px;
     margin-bottom: 0.3rem;
 }
-.confidence-text {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #E6E9EF;
-}
 .section-header {
     color: #00D9C0;
     font-size: 1.2rem;
@@ -134,7 +129,6 @@ if uploaded_file is not None:
 
     probs = predictions[0]
     predicted_class = np.argmax(probs)
-    confidence = float(probs[predicted_class])
     grade = CLASS_NAMES[predicted_class]
     grade_name = GRADE_LABELS.get(grade, "")
 
@@ -148,14 +142,6 @@ if uploaded_file is not None:
         <div class="result-grade">{grade} &nbsp;<span style="font-size:1.4rem; color:#9AA4B2;">({grade_name})</span></div>
     </div>
     """, unsafe_allow_html=True)
-
-    st.markdown(f"""
-    <div class="card">
-        <div class="result-label">Confidence</div>
-        <div class="confidence-text">{confidence*100:.2f}%</div>
-    </div>
-    """, unsafe_allow_html=True)
-    st.progress(int(confidence * 100))
 
     # -----------------------------
     # Grad-CAM Heatmap
