@@ -29,7 +29,7 @@ Two datasets from Kaggle were used, each requiring a different preprocessing pip
 
 ![Image description](Figures/Two-Knees.png)
 
-*Figure: An image that contains both knees *
+*Figure: An image that contains both knees*
 
 **2. OAI (Osteoarthritis Initiative) dataset** — same grading task, but already preprocessed and pre-split (70% train / 10% val / 20% test). Main issue: significant class imbalance.
 
