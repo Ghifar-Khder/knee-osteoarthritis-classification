@@ -81,16 +81,6 @@ For a **Normal** (grade 0) knee, the Grad-CAM heatmap spreads across the entire 
   <em>Figure (6): Grade 4 (Severe) — Grad-CAM concentrated on the most affected region of the joint</em>
 </p>
 
-## Run it locally
-
-```bash
-git clone https://github.com/Ghifar-Khder/knee-osteoarthritis-classification.git
-cd knee-osteoarthritis-classification
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-> `final-model.keras` is tracked with Git LFS — install `git lfs` before cloning.
 
 ## App features
 
