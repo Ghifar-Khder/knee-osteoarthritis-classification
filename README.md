@@ -8,10 +8,33 @@ This project implements an AI-based system for automatic Knee Osteoarthritis (KO
 ## Project Structure
 
 ```
-├── .streamlit/                # Streamlit theme/config
-├── .devcontainer/              # Dev container config
-├── app.py                      # Streamlit app (inference + Grad-CAM)
-├── final-model.keras           # Trained CNN model (Git LFS)
+├── .devcontainer/
+│   └── devcontainer.json
+├── .streamlit/
+│   └── config.toml
+├── Figures/                          # Images used in this README
+├── Test-data/                        # Held-out test set for evaluation, one folder per KL grade
+│   ├── 0/                            # 90 images
+│   ├── 1/                            # 100 images
+│   ├── 2/                            # 100 images
+│   ├── 3/                            # 100 images
+│   └── 4/                            # 51 images
+├── src/
+│   ├── initialize/                   # Data prep: knee splitting, preprocessing, GAN balancing
+│   │   ├── separating-knees1.py
+│   │   ├── split3.py
+│   │   ├── preprocessing2.py
+│   │   ├── knee_gan_balancer4.py
+│   │   └── creatingUsingTrainedGAN5.py
+│   ├── train/                        # Model training
+│   │   ├── RES-INIT6.py
+│   │   └── main-train7.py
+│   └── test/                         # Model evaluation
+│       ├── test8.py
+│       ├── ROC.py
+│       └── FID.py
+├── app.py                            # Streamlit app (inference + Grad-CAM)
+├── final-model.keras                 # Trained CNN model (Git LFS)
 ├── requirements.txt
 └── README.md
 ```
