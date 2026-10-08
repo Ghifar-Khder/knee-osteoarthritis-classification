@@ -119,11 +119,8 @@ This tool is for educational and research purposes only. It is **not** a medical
 
 ## Contact
 
-* **Developer:** Ghifar Khder
-* **Email:** ghifarkhder2000@gmail.com
-* **LinkedIn:** [www.linkedin.com/in/ghifar-khder](https://www.linkedin.com/in/ghifar-khder)
-* **Repository:** [github.com/Ghifar-Khder/knee-osteoarthritis-classification](https://github.com/Ghifar-Khder/knee-osteoarthritis-classification)
-
-## Author
-
-[Ghifar Khder](https://ghifar-khder.github.io/portfolio/)
+- **Developer:** Ghifar Khder
+- **Email:** [ghifarkhder2000@gmail.com](mailto:ghifarkhder2000@gmail.com)
+- **LinkedIn:** [www.linkedin.com/in/ghifar-khder](https://www.linkedin.com/in/ghifar-khder)
+- **Repository:** [https://github.com/Ghifar-Khder/knee-osteoarthritis-classification](https://github.com/Ghifar-Khder/knee-osteoarthritis-classification)
+- Portfolio: [Ghifar Khder](https://ghifar-khder.github.io/portfolio/)
